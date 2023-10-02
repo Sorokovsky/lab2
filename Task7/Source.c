@@ -34,14 +34,11 @@ void reversed()
 		ch2 = getchar();
 	} while (!(ch >= 'A' && ch <= 'S'));
 	k = ch2;
-	for (kk = ch; kk <= k; kk++) {
-		printf("\n ");
-		for (ch2 = ch; ch2 <= k - p; ch2++)
-			printf(" ");
-		for (j = ch; j <= kk; j++)
-			printf("%c", j);
-		for (i = kk; i > ch; i--)
-			printf("%c", i - 1);
+	for (kk = ch; k >= 'A'; k--) {
+		for (ch; ch <= k; ch++)
+			printf_s("%c", ch);
+		for (ch; ch <= ch2; ch++)
+			printf_s("%c", ch);
 		p++;
 	}
 
@@ -99,7 +96,6 @@ void romb()
 	do {
 		ch2 = getchar();
 	} while (!(ch >= 'A' && ch <= 'S'));
-	for (kk = 'S' + 1; kk <= ch2; kk++)
 		k = ch2;
 	for (kk = ch; kk <= k; kk++)
 	{
@@ -120,14 +116,13 @@ void romb()
 			printf_s("%c", ch);
 		for (ch; ch <= ch2; ch++)
 			printf_s("%c", ch);
-
 		p++;
 	}
 }
 int main(void) {
-	normal();
+	//normal();
 	//printf_s("\n\n\n\n");
-	//reversed();
+	reversed();
 	//printf_s("\n\n\n\n");
 	//left();
 	//right();
