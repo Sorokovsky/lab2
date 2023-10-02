@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <conio.h>
+#include<stdio.h>
+#include<conio.h>
 int main(void) {
 	int j = 0;
 	double i, n;
@@ -20,7 +20,7 @@ int main(void) {
 	{
 		while (ii <= n) 
 		{
-			printf("\n \t%3d %3lf", j, ii);
+			printf("\n%3d \t %3lf", j, ii);
 			++ii;
 			++j;
 		}
@@ -42,12 +42,12 @@ int main(void) {
 		double ii = i;
 		while (ii <= n)
 		{
-			printf("  %lf", ii);
+			printf("%lf", ii);
 			++ii;
 			++j;
 		}
 	}
-	printf("\n \t Total numbers:%d \n", j); 
+	printf("\n Total numbers:%d \n", j); 
 	printf("\n Press any key:");
 	_getch();
 	return 0;
