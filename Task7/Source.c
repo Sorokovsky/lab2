@@ -10,7 +10,6 @@ void normal()
 	do {
 		ch2 = getchar();
 	} while (!(ch >= 'A' && ch <= 'S'));
-	for (kk = 'S' + 1; kk <= ch2; kk++)
 	k = ch2;
 	for (kk = ch; kk <= k; kk++)
 	{
@@ -28,7 +27,7 @@ void reversed()
 {
 	int p = 0;
 	char ch = 'A';
-	char i, j, k, ch2 = 'S', kk, chA;
+	char i, j, k, ch2, kk, chA;
 	chA = ch;
 	printf("\n Enter a capital letter between \" A \" and\" S \":");
 	do {
@@ -126,12 +125,12 @@ void romb()
 	}
 }
 int main(void) {
-	//normal();
+	normal();
 	//printf_s("\n\n\n\n");
 	//reversed();
 	//printf_s("\n\n\n\n");
 	//left();
 	//right();
-	romb();
+	//romb();
 	return 0;
 }
