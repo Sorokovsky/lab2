@@ -1,0 +1,3 @@
+﻿  Source.c
+D:\progects\c\lab2\Task2\Task2\Source.c(20,17): warning C4047: 'initializing': 'char' differs in levels of indirection from 'char [1]'
+  Task2.vcxproj -> D:\progects\c\lab2\Task2\Debug\Task2.exe
